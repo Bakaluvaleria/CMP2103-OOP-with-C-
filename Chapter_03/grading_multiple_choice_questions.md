@@ -25,6 +25,8 @@ The key is stored in a one-dimensional list:
 
 Write a program that grades the test and displays the result. To do this, the program compares each
 student’s answers with the key, counts the number of correct answers, and displays it.
+
+
 #include <iostream>
 #include <vector>
 
