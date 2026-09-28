@@ -91,12 +91,12 @@ export bool prefixMatched(vector<int> number)
 
 export vector<int> readCardNumber()
 {
-    std::string number;
+    string number;
 
-    std::cout << "Enter number: \n";
-    std::cin >> number;
+    cout << "Enter number: \n";
+    cin >> number;
 
-    std::vector<int> card_digits;
+    vector<int> card_digits;
     for (int i = 0; i < number.size(); ++i)
     {
         // Convert char into an integer. Read about ASCII
@@ -107,9 +107,9 @@ export vector<int> readCardNumber()
     return card_digits;
 }
 
-//Return the first k number of digits from number. If the number of digits in number is less than k, return number.\
-int getPrefix(std:vector<int> number, int k);
-export int getPrefix(std::vector<int> number, int k)
+//Return the first k number of digits from number. 
+int getPrefix(vector<int> number, int k);
+export int getPrefix(vector<int> number, int k)
 {
     int k_prefix = 0;
 
