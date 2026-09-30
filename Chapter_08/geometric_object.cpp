@@ -1,3 +1,7 @@
+// Inheritance
+// PArent class
+// Child classes
+
 import std;
 using namespace std;
 
@@ -93,18 +97,18 @@ public:
 
 int main()
 {
-    Circle circle(5.0);
+    Circle circle(5.0); circel
 
-    circle.printCircle();
+    circle.printCircle(); // Access member function
 
-    std::cout << "Area: "
-              << circle.getArea() << '\n';
+    // std::cout << "Area: "
+    //           << circle.getArea() << '\n';
 
-    std::cout << "Diameter: "
-              << circle.getDiameter() << '\n';
+    // std::cout << "Diameter: "
+    //           << circle.getDiameter() << '\n';
 
-    std::cout << "Perimeter: "
-              << circle.getPerimeter() << '\n';
+    // std::cout << "Perimeter: "
+    //           << circle.getPerimeter() << '\n';
 
     return 0;
 }

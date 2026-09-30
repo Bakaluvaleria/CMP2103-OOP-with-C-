@@ -21,7 +21,7 @@ int main()
     date_of_birth.m = "January";
     date_of_birth.d = 1;
 
-    // Function gets age
+    // Define a function that gets age
 
-    print("Today is {}, {} {}th\n", today.y, today.m, today.d);
+    print("Today is {}, {} {}th\n", now.y, now.m, now.d);
 }

@@ -21,8 +21,8 @@ public:
 int main (){
     X x; // class instabce of class X
     x.m = 10;
-    cout << x.mf(2) << '\n';
-    cout << x.m << "\n";
+    cout << x.mf(2) << '\n'; //10
+    cout << x.m << "\n"; //2
 }
 
 // Student
