@@ -25,7 +25,7 @@ void Date::add_day(int n)
     d += n;
 }
 
-int Date::month() 
+int Date::month()
 {
     return m; // not the member function, can’t access m
 }
@@ -38,5 +38,6 @@ void Date::print() const
 int main()
 {
     Date today{2026, 5, 5};
+    today.add_day(5);
     today.print();
 }
