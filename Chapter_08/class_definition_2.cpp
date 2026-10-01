@@ -4,9 +4,9 @@ using namespace std;
 class X
 {
 
-    // member objects are private by default. Without declaring, members are treated to be default.
+    // member objects are private by default. Without declaring, members are treated to be private default.
 private:
-    int f; // private member
+    int f; // private member. Only accessible within a class
 
     int mf_add(int y, int z) // private and can only be accessed within a class X
     {
@@ -32,7 +32,7 @@ int main()
     // define a public function mf_add
 
     x.m = 10; // Assign a value to public data member, m of class x
-    // x.f = 3; // return error because it is a private data member
+    // x.f = 3; // returns error because it is a private data member
     cout << x.m << "\n";
     x.mf(); // Use public class
 }
