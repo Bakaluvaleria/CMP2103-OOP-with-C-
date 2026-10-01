@@ -1,46 +1,54 @@
-#include <iostream>
+import std;
+using namespace std;
 
-enum class Month
+// Ckass
+// private
+// public
+// memebers
+// access
+
+// int g;
+
+class X
 {
-    jan = 1,
-    feb,
-    mar,
-    apr,
-    may,
-    jun,
-    jul,
-    aug,
-    sep,
-    oct,
-    nov,
-    dec
+
+private:
+    int f; // private
+
+    string mf_string()
+    {
+        string v = "hello there";
+        return v;
+    }
+
+public:
+    int m;    // public data member
+    void mf() // 2
+              // function member
+
+    {
+        // int old = m; // 10
+        // f = 5;
+        // m = v - f;  // m = 2
+        // return old; // return 10
+        cout << mf_string() << "\n";
+        // return mf_string;
+    }
 };
-
-int to_int(Month m)
-{
-    // Covert m to string
-    return static_cast<int>(m);
-}
-
-// If month is DEc
-Month operator++(Month &m)
-{
-    m = (m == Month::dec)
-            ? Month::jan
-            : Month{to_int(m) + 1};
-
-    return m;
-}
 
 int main()
 {
-    Month m = Month::nov;
-
-    ++m;
-
-    std::cout << to_int(m) << '\n'; // 12
-
-    ++m;
-
-    std::cout << to_int(m) << '\n'; // 1
+    X x; // class instabce of class X
+    // x.m = 10;
+    // x.f = 3; // return error because because priovcare
+    // cout << x.mf(2) << '\n'; //10
+    // cout << x.m << "\n"; // 2
+    x.mf();
+    // cout << x.m();
 }
+
+// Student
+// name
+// age
+// program
+// Specialization

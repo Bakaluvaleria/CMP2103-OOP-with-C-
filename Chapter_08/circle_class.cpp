@@ -25,7 +25,7 @@ public:
 
     void setRadius(double radius)
     {
-        this->radius = radius;
+        this->radius = radius; //this pint
     }
 };
 
