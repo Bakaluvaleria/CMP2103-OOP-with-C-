@@ -25,3 +25,15 @@ int main()
 
     print("Today is {}, {} {}th\n", now.y, now.m, now.d);
 }
+
+
+// struct X {
+// int m;
+// // ...
+// };
+
+// class X {
+// public:
+// int m;
+// // ...
+// };
