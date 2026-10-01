@@ -1,54 +1,38 @@
 import std;
 using namespace std;
 
-// Ckass
-// private
-// public
-// memebers
-// access
-
-// int g;
-
 class X
 {
 
+    // member objects are private by default. Without declaring, members are treated to be default.
 private:
-    int f; // private
+    int f; // private member
 
-    string mf_string()
+    int mf_add(int y, int z) // private and can only be accessed within a class X
     {
-        string v = "hello there";
-        return v;
+        int sum;
+        sum = y + z;
+        return sum;
     }
 
 public:
     int m;    // public data member
-    void mf() // 2
-              // function member
+    void mf() // Public function.
 
     {
-        // int old = m; // 10
-        // f = 5;
-        // m = v - f;  // m = 2
-        // return old; // return 10
-        cout << mf_string() << "\n";
-        // return mf_string;
+        f = 5;     // private object assigned a value                                             // Access private data member
+        print("Sum of {} and {} is {}.\n", f, m, mf_add(f, m)); // Use private member function
+        return;                                                 // returns nothing
     }
 };
 
 int main()
 {
-    X x; // class instabce of class X
-    // x.m = 10;
-    // x.f = 3; // return error because because priovcare
-    // cout << x.mf(2) << '\n'; //10
-    // cout << x.m << "\n"; // 2
-    x.mf();
-    // cout << x.m();
-}
+    X x; // class instance of class X
+    // define a public function mf_add
 
-// Student
-// name
-// age
-// program
-// Specialization
+    x.m = 10; // Assign a value to public data member, m of class x
+    // x.f = 3; // return error because it is a private data member
+    cout << x.m << "\n";
+    x.mf(); // Use public class
+}
